@@ -1,0 +1,3 @@
+# Project exclude paths
+/bridge/target/
+/builder/target/
