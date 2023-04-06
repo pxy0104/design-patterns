@@ -1,54 +1,20 @@
 package com.design.bridge;
 
-//  创建电脑牌子
-class Lenovo implements Brand {
-    @Override
-    public void sale() {
-        System.out.print("联想");
+
+public class Test {
+    public static void main(String[] args) {
+        // 创建一个红色对象和一个蓝色对象
+        IColor red = new Red();
+        IColor blue = new Blue();
+        // 创建一个圆形对象和一个方形对象，并分别设置它们的颜色为红色和蓝色
+        IShape circle = new Circle();
+        circle.setColor(red);
+        IShape square = new Square();
+        square.setColor(blue);
+
+        // 调用圆形和方形的画图方法
+        circle.draw();
+        square.draw();
+
     }
 }
-class Dell implements Brand {
-
-    @Override
-    public void sale() {
-        System.out.print("戴尔");
-    }
-
-}
-class Computer {
-
-    protected Brand brand;
-
-    public Computer(Brand b) {
-        this.brand = b;
-    }
-    public void sale(){
-        brand.sale();
-    }
-}
-class Desktop extends Computer {
-
-    public Desktop(Brand b) {
-        super(b);
-    }
-
-    @Override
-    public void sale() {
-        super.sale();
-        System.out.println("出售台式电脑");
-    }
-}
-
-class Laptop extends Computer {
-
-    public Laptop(Brand b) {
-        super(b);
-    }
-
-    @Override
-    public void sale() {
-        super.sale();
-        System.out.println("出售笔记本");
-    }
-}
-
