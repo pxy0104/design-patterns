@@ -15,6 +15,7 @@
     <module>strategy</module>
       <module>adapter</module>
       <module>command</module>
+      <module>chain-of-responsibility</module>
   </modules>
 
   <properties>

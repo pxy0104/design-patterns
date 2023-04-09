@@ -10,6 +10,7 @@
         <module name="bridge" />
         <module name="adapter" />
         <module name="strategy" />
+        <module name="chain-of-responsibility" />
         <module name="command" />
       </profile>
     </annotationProcessing>
