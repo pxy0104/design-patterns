@@ -16,6 +16,7 @@
       <module>adapter</module>
       <module>command</module>
       <module>chain-of-responsibility</module>
+      <module>facade</module>
   </modules>
 
   <properties>
