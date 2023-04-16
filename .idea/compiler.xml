@@ -10,6 +10,7 @@
         <module name="builder" />
         <module name="facade" />
         <module name="bridge" />
+        <module name="state" />
         <module name="strategy" />
         <module name="chain-of-responsibility" />
         <module name="command" />
